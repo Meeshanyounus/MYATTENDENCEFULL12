@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./mystyleofaddstudent.css">
+   
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="signUp_heading">Add Student</h1>
+        <input class="input" id="name" type="text" placeholder="Enter Name">
+        <input class="input" id="fathername" type="text" placeholder="Enter Father Name">
+        <input class="input" id="rollNumber" type="number" placeholder="Enter Roll Number">
+        <input class="input" id="contact" type="number" placeholder="Enter Contact No">
+        <input class="input" id="CNIC" type="number" placeholder="Enter CNIC No">
+        <div id="showPic"></div>
+        <label for="picture">+ Upload<input id="picture" class="hidden" type="file" accept="image"></label>
+        <select class="div opt" id="course">
+            <option class="opt" value="">Select Course</option>
+            <option class="opt" value="Web">Web </option>
+            <option class="opt" value="english">english</option>
+            <option class="opt" value="arduino">arduino</option>
+            <option class="opt" value="raspbarry">raspberry</option>
+        </select>
+        <select id="sir" class="div opt">
+            <option class="opt" value="">Select Class</option>
+            <option class="opt" value="Sir saad">Sir saad</option>
+            <option class="opt" value="Sir irfan">Sir irfan</option>
+            <option class="opt" value="Sir tariq">Sir tariq</option>
+            <option class="opt" value="miss hina">miss hina</option>
+        </select>
+        <button class="add_btn" onclick="sendstudentDAta()">Submit</button>
+        <a style="color: red;" href="./admin.html">Back to the admin page</a>
+    </div>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./addStudents.js" type="module"></script>
+</body>
+
+</html>

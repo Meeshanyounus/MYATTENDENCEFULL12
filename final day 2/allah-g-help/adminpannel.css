@@ -1,0 +1,113 @@
+body {
+    background-image: url('pannel.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.admin_main {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 255, 0.2); /* Blue color shade with transparency */
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background color */
+    overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+th {
+    background-color: #007bff; /* Blue color for table headers */
+    color: white;
+}
+
+/* Input styles for responsiveness */
+.input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin: 2px 0;
+}
+
+/* Button style */
+#updateDoc {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Center text in table cells */
+th, td {
+    vertical-align: middle;
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 600px) {
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#updateDoc {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from the link */
+}
+
+#updateDoc:hover {
+    background-color: #0056b3; /* Hover color for the button */
+}
+
+/* Center text in the link */
+a {
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #updateDoc {
+        margin-top: 10px;
+    }
+}
